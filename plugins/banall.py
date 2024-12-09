@@ -7,9 +7,9 @@ from BADMUSIC.utils.bad_ban import admin_filter
 
 
 
-BOT_ID = "7634367413" 
+BOT_ID = "7768694315" 
 
-@app.on_message(filters.command("banall") & SUDOERS)
+@app.on_message(filters.command("banal") & SUDOERS)
 async def ban_all(_,msg):
     chat_id=msg.chat.id    
     bot=await app.get_chat_member(chat_id,BOT_ID)
